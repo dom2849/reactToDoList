@@ -1,8 +1,9 @@
 import React from 'react';
+import ToDoList from './ToDoList/ToDoList';
 
 function App() {
   return (
-    <h1>hi</h1>
+      <ToDoList title = "To-Do List"/>
   );
 }
 
