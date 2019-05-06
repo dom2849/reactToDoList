@@ -28,13 +28,13 @@
     transform: translateY(-50%);
 }
 
-.todo__items-wrapper{
+.todo__wrapper{
     background: #fff;
     border-radius: 5px;
     padding: 1rem;
 }
 
-.todo__items > *{
+.todo__item{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
@@ -57,6 +57,7 @@
 
 .todo__checkbox{
     cursor: pointer;
+    margin-right: .5rem;
 }
 
 .todo__clear-all{
