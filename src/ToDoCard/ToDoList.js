@@ -7,13 +7,9 @@ import './ToDoCard.css'
 export default class ToDoList extends Component {
     state = {
         currentToDo: "",
-        toDoItems: [
-            { id: 1, value: "Fun", completed: false },
-            { id: 2, value: "d", completed: false },
-            { id: 3, value: "d", completed: false }
-        ]
+        toDoItems: []
     }
-    id = 5;
+    id = 1;
 
     handleInputChange(event) {
         const currentToDo = event.target.value;
@@ -98,7 +94,7 @@ export default class ToDoList extends Component {
                         <span onClick={this.clearCompletedTasks.bind(this)} className="button">Clear Completed</span>
                         <span onClick={this.clearAllItems.bind(this)} className="button">Clear All</span>
                     </div>
-                    
+
                 </div>
             </div>
         );

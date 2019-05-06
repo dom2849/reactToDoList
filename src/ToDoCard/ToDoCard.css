@@ -45,8 +45,9 @@
 }
 
 
-.todo__delete{
-    font-size: 1.1rem;
+.todo__delete,
+.todo__clear-group{
+    font-size: 1.3rem;
 }
 
 .todo__description{
@@ -64,7 +65,6 @@
 }
 
 .todo__clear-group{
-    font-size: 1.1rem;
     display: flex;
     justify-content: space-between;
     margin-bottom: .4rem;
