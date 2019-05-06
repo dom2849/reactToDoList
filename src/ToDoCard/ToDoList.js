@@ -61,9 +61,9 @@ export default class ToDoList extends Component {
         return toDoItems;
     }
 
-    clearCompletedTasks(){
+    clearCompletedTasks() {
         let unfinishedTasks = this.getUnfinishedTasks();
-        this.setState({ toDoItems: unfinishedTasks }); 
+        this.setState({ toDoItems: unfinishedTasks });
     }
 
     getUnfinishedTasks() {
@@ -88,14 +88,17 @@ export default class ToDoList extends Component {
         return (
             <div>
                 <ToDoInput value={this.state.currentToDo} inputChanged={this.handleInputChange.bind(this)} keyPressed={this.handleKeyPress.bind(this)} addItem={this.handleItemAdd.bind(this)} />
+
                 <div className={todoWrapperClasses.join(' ')}>
                     <ul className="todo__list list">
                         {toDoItems}
                     </ul>
+
                     <div className="todo__clear-group">
                         <span onClick={this.clearCompletedTasks.bind(this)} className="button">Clear Completed</span>
                         <span onClick={this.clearAllItems.bind(this)} className="button">Clear All</span>
                     </div>
+                    
                 </div>
             </div>
         );
