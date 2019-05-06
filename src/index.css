@@ -1,1 +1,33 @@
+body {
+    background: linear-gradient(#2c3e50, #4CA1AF) fixed;
+    font-size: 1.3rem;
+}
 
+.container{
+    max-width: 350px;
+    margin: auto;
+}
+
+.input{
+    outline: none;
+    border: none;
+}
+
+.button{
+    display: inline-block;
+    cursor: pointer;
+    transition: .2s;
+    padding: .2rem;
+}
+
+@media (any-hover: hover){
+    .button:hover{
+        color: #35707a;
+    }
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
