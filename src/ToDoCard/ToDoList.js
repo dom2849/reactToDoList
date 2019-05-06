@@ -21,6 +21,10 @@ export default class ToDoList extends Component {
         this.setState({ currentToDo: currentToDo })
     }
 
+    handleKeyPress(event){
+        if (event.key ==='Enter') this.handleItemAdd();
+    }
+
     handleItemAdd() {
         if (this.state.currentToDo.trim() === '') return;
         this.id++;
@@ -62,12 +66,12 @@ export default class ToDoList extends Component {
 
         return (
             <div>
-                <ToDoInput value={this.state.currentToDo} inputChanged={this.handleInputChange.bind(this)} addItem={this.handleItemAdd.bind(this)} />
+                <ToDoInput value={this.state.currentToDo} inputChanged={this.handleInputChange.bind(this)} keyPressed = {this.handleKeyPress.bind(this)} addItem={this.handleItemAdd.bind(this)} />
                 <div className={todoWrapperClasses.join(' ')}>
                     <ul className="list">
                         {toDoItems}
                     </ul>
-                    <p onClick = {this.clearAllItems.bind(this)}className="todo__clear-all"> <span className="button">Clear</span></p>
+                    <p onClick = {this.clearAllItems.bind(this)}className="todo__clear-all"> <span className="button">Clear All</span></p>
                 </div>
             </div>
         );
