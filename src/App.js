@@ -1,9 +1,9 @@
 import React from 'react';
-import ToDoList from './ToDoList/ToDoList';
+import ToDoCard from './ToDoCard/ToDoCard'
 
 function App() {
   return (
-      <ToDoList title = "To-Do List"/>
+      <ToDoCard title = "To-Do List"/>
   );
 }
 
