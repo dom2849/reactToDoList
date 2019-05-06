@@ -1,12 +1,12 @@
 import React from 'react'
 import '../index.css'
-import './ToDo.css'
+import './ToDoCard.css'
 
-export default function ToDoInput() {
+export default function ToDoInput(props) {
     return (
-        <div class="todo__input-wrapper">
-            <input type="text" class="todo__input input" placeholder="New task"></input>
-            <span class="todo__add button">Add</span>
+        <div className="todo__input-wrapper">
+            <input type="text" className="todo__input input" placeholder="New task" onChange={props.inputChanged} value = {props.value}></input>
+            <span onClick = {props.addItem} className="todo__add button">Add</span>
         </div>
     );
 }

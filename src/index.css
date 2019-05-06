@@ -8,6 +8,10 @@ body {
     margin: auto;
 }
 
+.display-none{
+    display: none;
+}
+
 .input{
     outline: none;
     border: none;
