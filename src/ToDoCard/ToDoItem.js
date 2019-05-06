@@ -9,7 +9,7 @@ export default function ToDoItem(props) {
                 <input type="checkbox" className="todo__checkbox input" />
                 <span className="todo__description">{props.value}</span>
             </div>
-            <i className="fas fa-times todo__delete button"></i>
+            <i onClick = {props.deleteItem} className="fas fa-times todo__delete button"></i>
         </li>
     )
 }
