@@ -1,0 +1,65 @@
+
+.todo__title{
+    text-align: center;
+    color: #fff;
+}
+
+.todo__input-wrapper{
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.todo__input{
+    box-sizing: border-box;
+    font-size: inherit;
+    width: 100%;
+    padding: .9rem 1rem;
+    border-radius: 5px;
+}
+
+.todo__input::placeholder{
+    color: #6fb3bf;
+}
+
+.todo__add{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.todo__items-wrapper{
+    background: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.todo__items > *{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: .8rem 0;
+    margin-bottom: 1rem;
+}
+
+.todo__delete{
+    font-size: 1.1rem;
+}
+
+.todo__description{
+    transition: .3s;
+}
+
+.todo__checkbox:checked + .todo__description{
+    text-decoration: line-through;
+    color: #35707a;
+}
+
+.todo__checkbox{
+    cursor: pointer;
+}
+
+.todo__clear-all{
+    text-align: right;
+    margin: 1.2rem 0 0 0;
+}
