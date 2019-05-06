@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "%7Bdom2849%7D.github.io/%7BreactToDoList%7D/static/css/main.f8290274.chunk.css",
-    "main.js": "%7Bdom2849%7D.github.io/%7BreactToDoList%7D/static/js/main.141edb39.chunk.js",
-    "main.js.map": "%7Bdom2849%7D.github.io/%7BreactToDoList%7D/static/js/main.141edb39.chunk.js.map",
-    "runtime~main.js": "%7Bdom2849%7D.github.io/%7BreactToDoList%7D/static/js/runtime~main.97e3adbb.js",
-    "runtime~main.js.map": "%7Bdom2849%7D.github.io/%7BreactToDoList%7D/static/js/runtime~main.97e3adbb.js.map",
-    "static/js/2.ba19787c.chunk.js": "%7Bdom2849%7D.github.io/%7BreactToDoList%7D/static/js/2.ba19787c.chunk.js",
-    "static/js/2.ba19787c.chunk.js.map": "%7Bdom2849%7D.github.io/%7BreactToDoList%7D/static/js/2.ba19787c.chunk.js.map",
-    "index.html": "%7Bdom2849%7D.github.io/%7BreactToDoList%7D/index.html",
-    "precache-manifest.eaae48c7674f53927b43128451866fac.js": "%7Bdom2849%7D.github.io/%7BreactToDoList%7D/precache-manifest.eaae48c7674f53927b43128451866fac.js",
-    "service-worker.js": "%7Bdom2849%7D.github.io/%7BreactToDoList%7D/service-worker.js",
-    "static/css/main.f8290274.chunk.css.map": "%7Bdom2849%7D.github.io/%7BreactToDoList%7D/static/css/main.f8290274.chunk.css.map"
+    "main.css": "/reactToDoList/static/css/main.f8290274.chunk.css",
+    "main.js": "/reactToDoList/static/js/main.261f571b.chunk.js",
+    "main.js.map": "/reactToDoList/static/js/main.261f571b.chunk.js.map",
+    "runtime~main.js": "/reactToDoList/static/js/runtime~main.fffa0d1f.js",
+    "runtime~main.js.map": "/reactToDoList/static/js/runtime~main.fffa0d1f.js.map",
+    "static/js/2.ba19787c.chunk.js": "/reactToDoList/static/js/2.ba19787c.chunk.js",
+    "static/js/2.ba19787c.chunk.js.map": "/reactToDoList/static/js/2.ba19787c.chunk.js.map",
+    "index.html": "/reactToDoList/index.html",
+    "precache-manifest.bd5779da1be6b47abe7336f17b86107d.js": "/reactToDoList/precache-manifest.bd5779da1be6b47abe7336f17b86107d.js",
+    "service-worker.js": "/reactToDoList/service-worker.js",
+    "static/css/main.f8290274.chunk.css.map": "/reactToDoList/static/css/main.f8290274.chunk.css.map"
   }
 }
