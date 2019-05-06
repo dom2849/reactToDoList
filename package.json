@@ -1,6 +1,6 @@
 {
   "name": "todo-list",
-  "homepage": "http://{dom2849}.github.io/{reactToDoList}",
+  "homepage": "http://dom2849.github.io/reactToDoList",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
