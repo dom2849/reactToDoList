@@ -8,34 +8,40 @@ export default class ToDoList extends Component {
     state = {
         currentToDo: "",
         toDoItems: [
-            { id: 1, value: "Fun" },
-            { id: 2, value: "d" },
-            { id: 3, value: "de" },
-            { id: 4, value: "e" },
+            // { id: 1, value: "Fun" },
+            // { id: 2, value: "d" },
+            // { id: 3, value: "de" },
+            // { id: 4, value: "e" },
         ]
     }
     id = 5;
 
     handleInputChange(event) {
-        let currentToDo = event.target.value;
+        const currentToDo = event.target.value;
         this.setState({ currentToDo: currentToDo })
     }
 
     handleItemAdd() {
+        if (this.state.currentToDo.trim() === '') return;
         this.id++;
-        let newItem = { id: this.id, value: this.state.currentToDo }
-        let toDoItems = [...this.state.toDoItems, newItem];
+        const newItem = { id: this.id, value: this.state.currentToDo }
+        const toDoItems = [...this.state.toDoItems, newItem];
         this.setState({ currentToDo: "", toDoItems: toDoItems });
     }
 
     handleItemDeletion(index) {
-        let toDoItems = [...this.state.toDoItems];
+        const toDoItems = [...this.state.toDoItems];
         toDoItems.splice(index, 1);
         this.setState({toDoItems: toDoItems});
     }
 
+    clearAllItems(){
+        const toDoItems = [];
+        this.setState({toDoItems: toDoItems});
+    }
+
     getToDoItems() {
-        let toDoItems = this.state.toDoItems.map((currentItem, index) => {
+        const toDoItems = this.state.toDoItems.map((currentItem, index) => {
             return (
                 <ToDoItem key={currentItem.id} value={currentItem.value}
                     deleteItem={this.handleItemDeletion.bind(this, index)} />
@@ -45,14 +51,12 @@ export default class ToDoList extends Component {
     }
 
     render() {
-        let todoWrapperClasses = ["todo__wrapper"];
+        let todoWrapperClasses = ["todo__wrapper", "display-none"];
         let toDoItems = null;
 
-        if (this.state.toDoItems.length <= 0) {
-            todoWrapperClasses.push("display-none");
-        }
-
-        else {
+        if (this.state.toDoItems.length > 0) {
+            const indexOfClassToRemove = todoWrapperClasses.indexOf("display-none");
+            todoWrapperClasses.splice(indexOfClassToRemove, 1);
             toDoItems = this.getToDoItems();
         }
 
@@ -63,7 +67,7 @@ export default class ToDoList extends Component {
                     <ul className="list">
                         {toDoItems}
                     </ul>
-                    <p className="todo__clear-all"> <span className="button">Clear</span></p>
+                    <p onClick = {this.clearAllItems.bind(this)}className="todo__clear-all"> <span className="button">Clear</span></p>
                 </div>
             </div>
         );
